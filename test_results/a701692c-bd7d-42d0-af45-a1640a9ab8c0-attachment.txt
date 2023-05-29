@@ -1,0 +1,37 @@
+POST method
+https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+{"status":"OK","place_id":"133899d3d72ea58984d75299d9613713","scope":"APP","reference":"9fcff54f139b6ce082a39faf459fa9959fcff54f139b6ce082a39faf459fa995","id":"9fcff54f139b6ce082a39faf459fa995"}
+Successfully! Status code = 200
+All required fields are present!
+The required field 'status' is correct!
+GET POST method
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=133899d3d72ea58984d75299d9613713
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"29, side layout, cohen 09","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Successfully! Status code = 200
+All required fields are present!
+The required field 'address' is correct!
+PUT method
+https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+{"msg":"Address successfully updated"}
+Successfully! Status code = 200
+All required fields are present!
+The required field 'msg' is correct!
+GET PUT method
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=133899d3d72ea58984d75299d9613713
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"100, Svetlaya street, RU","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Successfully! Status code = 200
+All required fields are present!
+The required field 'address' is correct!
+DELETE method
+https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+{"status":"OK"}
+Successfully! Status code = 200
+All required fields are present!
+The required field 'status' is correct!
+GET DELETE method
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=133899d3d72ea58984d75299d9613713
+{"msg":"Get operation failed, looks like place_id  doesn't exists"}
+Successfully! Status code = 404
+All required fields are present!
+The word in the required field 'msg' - 'failed' is present!
+The test of creating, updating and deleting a new place on the map passed successfully!!!
